@@ -8,6 +8,7 @@ import { AiFillStar } from "react-icons/ai";
 class Page extends Component {
   state = {
     users: [],
+    achievements: [],
   };
 
   addUser = () => {
@@ -17,6 +18,26 @@ class Page extends Component {
         <Skill contentEditable="true" suppressContentEditableWarning={true}>
           Skill
         </Skill>,
+      ],
+    });
+  };
+
+  addAchievement = () => {
+    this.setState({
+      achievements: [
+        ...this.state.achievements,
+        <AchievementName
+          contentEditable="true"
+          suppressContentEditableWarning={true}
+        >
+          Achievement
+        </AchievementName>,
+        <AchievementDescription
+          contentEditable="true"
+          suppressContentEditableWarning={true}
+        >
+          add description
+        </AchievementDescription>,
       ],
     });
   };
@@ -59,13 +80,12 @@ class Page extends Component {
           <BodyContainer>
             <LeftDiv>
               <SkillsContainer>
-                <Heading>SKILLS</Heading>
-                <Skill
+                <Heading
                   contentEditable="true"
                   suppressContentEditableWarning={true}
                 >
-                  HTML5 / CSS3
-                </Skill>
+                  SKILLS
+                </Heading>
                 <Skill
                   contentEditable="true"
                   suppressContentEditableWarning={true}
@@ -76,219 +96,465 @@ class Page extends Component {
                   contentEditable="true"
                   suppressContentEditableWarning={true}
                 >
-                  React
+                  React / Redux
                 </Skill>
                 <Skill
                   contentEditable="true"
                   suppressContentEditableWarning={true}
                 >
-                  Skill X
+                  Flutter
+                </Skill>
+                <Skill
+                  contentEditable="true"
+                  suppressContentEditableWarning={true}
+                >
+                  Dart
+                </Skill>
+                <Skill
+                  contentEditable="true"
+                  suppressContentEditableWarning={true}
+                >
+                  SQL
+                </Skill>
+                <Skill
+                  contentEditable="true"
+                  suppressContentEditableWarning={true}
+                >
+                  REST / GraphQL
+                </Skill>
+                <Skill
+                  contentEditable="true"
+                  suppressContentEditableWarning={true}
+                >
+                  Git
+                </Skill>
+                <Skill
+                  contentEditable="true"
+                  suppressContentEditableWarning={true}
+                >
+                  HTML5 / CSS3
+                </Skill>
+                <Skill
+                  contentEditable="true"
+                  suppressContentEditableWarning={true}
+                >
+                  SASS
+                </Skill>
+                <Skill
+                  contentEditable="true"
+                  suppressContentEditableWarning={true}
+                >
+                  styled-components
+                </Skill>
+                <Skill
+                  contentEditable="true"
+                  suppressContentEditableWarning={true}
+                >
+                  AWS Lambda / API Gateway
+                </Skill>
+                <Skill
+                  contentEditable="true"
+                  suppressContentEditableWarning={true}
+                >
+                  AWS Amplify / S3
                 </Skill>
                 {this.state.users}
+
+                <Heading
+                  style={{ marginTop: "30px" }}
+                  contentEditable="true"
+                  suppressContentEditableWarning={true}
+                >
+                  ACHIEVEMENTS
+                </Heading>
+                <AchievementName
+                  contentEditable="true"
+                  suppressContentEditableWarning={true}
+                >
+                  Google IT Support Certified
+                </AchievementName>
+                <AchievementDescription
+                  contentEditable="true"
+                  suppressContentEditableWarning={true}
+                >
+                  <a
+                    href="https://www.youracclaim.com/badges/81e0d8a6-fd09-4b58-a834-dba5c894efaf/linked_in_profile"
+                    target="_blank"
+                  >
+                    Achieved Badge
+                  </a>
+                </AchievementDescription>
+                <AchievementName
+                  contentEditable="true"
+                  suppressContentEditableWarning={true}
+                >
+                  Flutter Create Contest Accomplishment
+                </AchievementName>
+                <AchievementDescription
+                  contentEditable="true"
+                  suppressContentEditableWarning={true}
+                >
+                  building a cross-platform app under 5KB of dart code{" "}
+                  <a
+                    href="https://www.credential.net/727b4418-d3fe-4d42-9a36-e13ed5d1ee16#gs.bxf14j"
+                    target="_blank"
+                  >
+                    Certificate
+                  </a>
+                </AchievementDescription>
+                <AchievementName
+                  contentEditable="true"
+                  suppressContentEditableWarning={true}
+                >
+                  Member of IT Professionals Institute, NZ
+                </AchievementName>
+                <AchievementDescription
+                  contentEditable="true"
+                  suppressContentEditableWarning={true}
+                >
+                  <a href="https://www.codesim.dev/itPro" target="_blank">
+                    Certificate
+                  </a>
+                </AchievementDescription>
+                <AchievementName
+                  contentEditable="true"
+                  suppressContentEditableWarning={true}
+                >
+                  Covid-19 Service Award, Matrix NZ
+                </AchievementName>
+                <AchievementDescription
+                  contentEditable="true"
+                  suppressContentEditableWarning={true}
+                >
+                  service recognition during Level 3 and 4 Emergency{" "}
+                  <a href="https://www.codesim.dev/matrix" target="_blank">
+                    Certificate
+                  </a>
+                </AchievementDescription>
+                {this.state.achievements}
               </SkillsContainer>
             </LeftDiv>
 
             <RightDiv>
               <RightParent>
-                <HeadSection>
+                <HeadSection
+                  contentEditable="true"
+                  suppressContentEditableWarning={true}
+                >
                   <FaGraduationCap />
                   <Heading>EDUCATION</Heading>
                 </HeadSection>
 
-                <EducationSection>
+                <BodySection>
                   <Divider></Divider>
                   <Details>
-                    <TitleRightDiv>
+                    <TitleRightDiv
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                    >
                       Specialization in Software Development - Level 7
                       <span>2015-2016</span>
                     </TitleRightDiv>
-                    <ContentRightDiv>
+                    <ContentRightDiv
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                    >
                       National Technology Institute - NTEC, Auckland, New
                       Zealand
                     </ContentRightDiv>
                     <HeightSpacer />
-                    <TitleRightDiv>
-                      Bachelor of Technology - B.Tech
+                    <TitleRightDiv
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                    >
+                      Bachelor of Computer Applications - BCA
                       <span>2011-2014</span>
                     </TitleRightDiv>
-                    <ContentRightDiv>
+                    <ContentRightDiv
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                    >
                       Punjab Technical University - PTU, India
                     </ContentRightDiv>
                   </Details>
-                </EducationSection>
+                </BodySection>
               </RightParent>
               <br />
 
               <RightParent>
-                <HeadSection>
+                <HeadSection
+                  contentEditable="true"
+                  suppressContentEditableWarning={true}
+                >
                   <MdWork />
                   <Heading>EMPLOYMENT HISTORY</Heading>
                 </HeadSection>
 
-                <EducationSection>
+                <BodySection>
                   <Divider></Divider>
                   <Details>
-                    <TitleRightDiv>
+                    <TitleRightDiv
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                    >
                       Web Developer - Fateh Fitness Studio, India
                       <span>October 2020 - Present</span>
                     </TitleRightDiv>
-                    <ContentRightDiv>
+                    <ContentRightDiv
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                    >
                       Skills: ReactJS, Javascript, NodeJS, AWS Lambda, SES,
                       Amplify, styled-components, AdobeXD, Flutter, Dart
                     </ContentRightDiv>
-                    <JobTasks>
+                    <JobTasks
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                    >
                       • Developing React website for the fitness studio.
                       Currently active on{" "}
                       <a href="https://www.fatehfitness.in/">
                         www.fatehfitness.in
                       </a>
                     </JobTasks>
-                    <JobTasks>
+                    <JobTasks
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                    >
                       • Managing AWS Services for deployment, lambda functions,
                       API Gateway and email services,
                     </JobTasks>
-                    <JobTasks>
+                    <JobTasks
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                    >
                       • Creating Flutter/Dart widgets for mobile-development
                       team
                     </JobTasks>
 
                     <HeightSpacer />
 
-                    <TitleRightDiv>
+                    <TitleRightDiv
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                    >
                       Mobile Developer & Designer -If Else Cloud Ltd, Auckland,
                       NZ
                       <span>March2019-June2019</span>
                     </TitleRightDiv>
-                    <ContentRightDiv>
+                    <ContentRightDiv
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                    >
                       Skills: SketchApp, AdobeXD, Flutter, Dart, Documentation,
                       RPi
                     </ContentRightDiv>
-                    <JobTasks>
+                    <JobTasks
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                    >
                       • Designing cross-platform wireframes and prototypes using
                       AdobeXD and SketchApp.
                     </JobTasks>
-                    <JobTasks>
+                    <JobTasks
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                    >
                       • Developing Flutter/Dart UX Pages for Android, IOS,
                       WatchOS for the UX testing purposes before developing
                       pages natively.
                     </JobTasks>
-                    <JobTasks>
+                    <JobTasks
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                    >
                       • Configuring IoT devices and RPis for dummy data.
                     </JobTasks>
                     <HeightSpacer />
 
-                    <TitleRightDiv>
+                    <TitleRightDiv
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                    >
                       Frontend Web Dev (Project for NKAI, Ministry of Education,
                       NZ) - Firstec Ltd
                       <span>Sep2017-Mar2018</span>
                     </TitleRightDiv>
-                    <ContentRightDiv>
+                    <ContentRightDiv
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                    >
                       Skills: AngularJS, AdobeXD, HTML5, CSS3, Javascript,
-                      Client Handling, Product Presentation
+                      Angular Material, Product Presentation
                     </ContentRightDiv>
-                    <JobTasks>
+                    <JobTasks
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                    >
                       • Developing Angular components for the student management
                       system of NKAI
                     </JobTasks>
-                    <JobTasks>
+                    <JobTasks
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                    >
                       • Designing proptotypes and wireframes for development
                       team
                     </JobTasks>
-                    <JobTasks>
+                    <JobTasks
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                    >
                       • Preparing upcoming prototypes for presentation purposes
                       and requirement gathering
                     </JobTasks>
                   </Details>
-                </EducationSection>
+                </BodySection>
               </RightParent>
               <br />
 
               <RightParent>
-                <HeadSection>
+                <HeadSection
+                  contentEditable="true"
+                  suppressContentEditableWarning={true}
+                >
                   <AiFillStar />
-                  <Heading>PERSONAL PROJECTS</Heading>
+                  <Heading
+                    contentEditable="true"
+                    suppressContentEditableWarning={true}
+                  >
+                    PERSONAL PROJECTS
+                  </Heading>
                 </HeadSection>
 
-                <EducationSection>
+                <BodySection>
                   <Divider></Divider>
                   <Details>
-                    <TitleRightDiv>
-                      Web Developer - Fateh Fitness Studio, India
-                      <span>October 2020 - Present</span>
-                    </TitleRightDiv>
-                    <ContentRightDiv>
-                      Skills: ReactJS, Javascript, NodeJS, AWS Lambda, SES,
-                      Amplify, styled-components, AdobeXD, Flutter, Dart
-                    </ContentRightDiv>
-                    <JobTasks>
-                      • Developing React website for the fitness studio.
-                      Currently active on{" "}
-                      <a href="https://www.fatehfitness.in/">
-                        www.fatehfitness.in
+                    <TitleRightDiv
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                    >
+                      Personal Website (under development) -{" "}
+                      <a href="https:\\www.codesim.dev" target="_blank">
+                        www.codesim.dev
                       </a>
-                    </JobTasks>
-                    <JobTasks>
-                      • Managing AWS Services for deployment, lambda functions,
-                      API Gateway and email services,
-                    </JobTasks>
-                    <JobTasks>
-                      • Creating Flutter/Dart widgets for mobile-development
-                      team
-                    </JobTasks>
-
-                    <HeightSpacer />
-
-                    <TitleRightDiv>
-                      Mobile Developer & Designer -If Else Cloud Ltd, Auckland,
-                      NZ
-                      <span>March2019-June2019</span>
+                      <span>March 2021 - Present</span>
                     </TitleRightDiv>
-                    <ContentRightDiv>
-                      Skills: SketchApp, AdobeXD, Flutter, Dart, Documentation,
-                      RPi
+                    <ContentRightDiv
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                    >
+                      Skills: ReactJS, AWS Lambda, SES, Amplify,
+                      styled-components
                     </ContentRightDiv>
-                    <JobTasks>
-                      • Designing cross-platform wireframes and prototypes using
-                      AdobeXD and SketchApp.
+                    <JobTasks
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                    >
+                      • Developing portfolio website using ReactJS
                     </JobTasks>
-                    <JobTasks>
-                      • Developing Flutter/Dart UX Pages for Android, IOS,
-                      WatchOS for the UX testing purposes before developing
-                      pages natively.
-                    </JobTasks>
-                    <JobTasks>
-                      • Configuring IoT devices and RPis for dummy data.
+                    <JobTasks
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                    >
+                      • UPCOMING: Going to connect all my github projects in
+                      Playground section of this website, still working on some
+                      GraphQL APIs. I will add email service as well in
+                      "ContactMe" section using AWS services.
                     </JobTasks>
                     <HeightSpacer />
 
-                    <TitleRightDiv>
-                      Frontend Web Dev (Project for NKAI, Ministry of Education,
-                      NZ) - Firstec Ltd
-                      <span>Sep2017-Mar2018</span>
+                    <TitleRightDiv
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                    >
+                      CV Builder Tool -{" "}
+                      <a
+                        href="https://main.d29sbkrjzugov7.amplifyapp.com/"
+                        target="_blank"
+                      >
+                        main.d29sbkrjzugov7.amplifyapp.com{" "}
+                      </a>
+                      <span>2020</span>
                     </TitleRightDiv>
-                    <ContentRightDiv>
-                      Skills: AngularJS, AdobeXD, HTML5, CSS3, Javascript,
-                      Client Handling, Product Presentation
+                    <ContentRightDiv
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                    >
+                      Skills: ReactJS, HTML5, CSS3
                     </ContentRightDiv>
-                    <JobTasks>
-                      • Developing Angular components for the student management
-                      system of NKAI
+                    <JobTasks
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                    >
+                      • This is my personal online CV Builder/Editor
                     </JobTasks>
-                    <JobTasks>
-                      • Designing proptotypes and wireframes for development
-                      team
+                    <JobTasks
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                    >
+                      • <span style={{ color: "red" }}>Bonus:</span> The CV
+                      you're currently reading was build using my CV builder
+                      tool. You can give it a try and may be you like to edit
+                      your own CV as well. One more thing, it works better on
+                      desktop/laptop, not suitable for mobile devices.
                     </JobTasks>
-                    <JobTasks>
-                      • Preparing upcoming prototypes for presentation purposes
-                      and requirement gathering
+                    <JobTasks
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                    >
+                      • You can edit all text in this tool and then click on
+                      print button to get your pdf copy of your cv
+                    </JobTasks>
+                    <HeightSpacer />
+
+                    <TitleRightDiv
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                    >
+                      Calc Themified -{" "}
+                      <a
+                        href="https://play.google.com/store/apps/details?id=com.singh.calculator"
+                        target="_blank"
+                      >
+                        play.google.com/store/apps/details?id=com.singh.calculator
+                      </a>
+                      <span>2020</span>
+                    </TitleRightDiv>
+                    <ContentRightDiv
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                    >
+                      Skills: Flutter, Dart, Google AdMob, Google
+                      In-App-Purchase, Rive 2D, Shared Preferences
+                    </ContentRightDiv>
+                    <JobTasks
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                    >
+                      • This is flutter based cross-platform application. I
+                      built it to test, learn and demonstrate some google's core
+                      APIs like in-app-purchases, shared-preferences, AdMob,
+                      etc.
+                    </JobTasks>
+                    <JobTasks
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                    >
+                      • Implementd very beautiful minimal FlatUI themes. It has
+                      features like in-app-purchase, calculations history,
+                      themes and a little bit of 2D animations in "About" page.
                     </JobTasks>
                   </Details>
-                </EducationSection>
+                </BodySection>
               </RightParent>
             </RightDiv>
           </BodyContainer>
         </PageContainer>
-        <AddSkillBtn onClick={this.addUser}>Add Skill</AddSkillBtn>
+        <AddSkillBtn onClick={this.addUser}>ADD SKILL</AddSkillBtn>
+        <AddAchievementBtn onClick={this.addAchievement}>
+          ADD ACHIEVEMENT
+        </AddAchievementBtn>
       </>
     );
   }
@@ -302,7 +568,7 @@ const PageContainer = styled.section`
   margin: 0.5cm auto;
   box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
   width: 210mm;
-  height: 268mm;
+  height: 280mm;
   padding: 16px;
 
   @media print {
@@ -356,14 +622,12 @@ const ContactItem = styled.div`
 `;
 
 const LeftDiv = styled.div`
-  ge;
   display: flex;
   height: 100%;
   width: 20%;
 `;
 
 const RightDiv = styled.div`
-  le;
   display: flex;
   height: 100%;
   width: 80%;
@@ -384,14 +648,13 @@ const SkillsContainer = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-
-  p {
-    margin: 6px 0;
-  }
 `;
 
-const Skill = styled.p`
+const Skill = styled.h5`
+  font-size: 12px;
   text-align: center;
+  color: var(--secondary-color);
+  margin-top: 9px;
 `;
 
 const Heading = styled.h4`
@@ -403,27 +666,42 @@ const Heading = styled.h4`
 
 const AddSkillBtn = styled.button`
   position: fixed;
+  padding: 12px;
   left: 30px;
-  bottom: 30px;
+  bottom: 76px;
   height: 36px;
   color: white;
   border-width: 0;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
   background-color: #2ecc71;
-  font-weight: 600;
+
+  :active {
+    bottom: 79px;
+  }
+`;
+
+const AddAchievementBtn = styled.button`
+  position: fixed;
+  padding: 12px;
+  left: 30px;
+  bottom: 26px;
+  height: 36px;
+  color: white;
+  border-width: 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  background-color: #2ecc71;
 
   :active {
     bottom: 29px;
   }
 `;
 
-const EducationSection = styled.div`
+const BodySection = styled.div`
   margin-top: 6px;
   display: flex;
   flex-direction: row;
   height: auto;
   width: 100%;
-  et;
 `;
 
 const HeadSection = styled.div`
@@ -442,7 +720,7 @@ const HeadSection = styled.div`
 `;
 
 const Divider = styled.div`
-  margin: 2px 24px 1px 8px;
+  margin: 12px 24px 1px 8px;
   // border-radius: 100%;
   width: 2px;
   height: auto;
@@ -452,6 +730,7 @@ const Divider = styled.div`
 const TitleRightDiv = styled.h5`
   font-size: 14px;
   font-weight: 900;
+  margin-top: 7px;
 
   span {
     margin-left: 10px;
@@ -476,6 +755,17 @@ const ContentRightDiv = styled.h6`
 const JobTasks = styled.div`
   color: var(--secondary-color);
   font-weight: 600;
-  font-size: 12px;
+  font-size: 12.2px;
   margin-top: 4px;
+`;
+const AchievementName = styled.h5`
+  font-size: 12px;
+  margin-top: 11px;
+  text-align: center;
+  color: var(--secondary-color);
+`;
+const AchievementDescription = styled.p`
+  text-align: center;
+  font-size: 12px;
+  color: grey;
 `;
