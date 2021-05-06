@@ -90,7 +90,7 @@ class Page extends Component {
                   contentEditable="true"
                   suppressContentEditableWarning={true}
                 >
-                  Javascript
+                  JavaScript
                 </Skill>
                 <Skill
                   contentEditable="true"
@@ -102,7 +102,7 @@ class Page extends Component {
                   contentEditable="true"
                   suppressContentEditableWarning={true}
                 >
-                  Flutter
+                  SASS / styled-components
                 </Skill>
                 <Skill
                   contentEditable="true"
@@ -114,19 +114,19 @@ class Page extends Component {
                   contentEditable="true"
                   suppressContentEditableWarning={true}
                 >
-                  SQL
+                  Flutter
                 </Skill>
                 <Skill
                   contentEditable="true"
                   suppressContentEditableWarning={true}
                 >
-                  REST / GraphQL
+                  AngularJS / Angular Material
                 </Skill>
                 <Skill
                   contentEditable="true"
                   suppressContentEditableWarning={true}
                 >
-                  Git
+                  Git Version Control
                 </Skill>
                 <Skill
                   contentEditable="true"
@@ -138,13 +138,13 @@ class Page extends Component {
                   contentEditable="true"
                   suppressContentEditableWarning={true}
                 >
-                  SASS
+                  REST / GraphQL
                 </Skill>
                 <Skill
                   contentEditable="true"
                   suppressContentEditableWarning={true}
                 >
-                  styled-components
+                  AdobeXD / SketchApp
                 </Skill>
                 <Skill
                   contentEditable="true"
@@ -226,10 +226,11 @@ class Page extends Component {
                   contentEditable="true"
                   suppressContentEditableWarning={true}
                 >
-                  service recognition during Level 3 and 4 Emergency{" "}
+                  service recognition{" "}
                   <a href="https://www.codesim.dev/matrix" target="_blank">
                     Certificate
-                  </a>
+                  </a>{" "}
+                  during level 3 and level 4 NZ Emergency
                 </AchievementDescription>
                 {this.state.achievements}
               </SkillsContainer>
@@ -312,7 +313,7 @@ class Page extends Component {
                       suppressContentEditableWarning={true}
                     >
                       • Developing React website for the fitness studio.
-                      Currently active on{" "}
+                      Currently live on{" "}
                       <a href="https://www.fatehfitness.in/">
                         www.fatehfitness.in
                       </a>
@@ -360,7 +361,7 @@ class Page extends Component {
                       contentEditable="true"
                       suppressContentEditableWarning={true}
                     >
-                      • Developing Flutter/Dart UX Pages for Android, IOS,
+                      • Developing Flutter/Dart widgets for Android, IOS,
                       WatchOS for the UX testing purposes before developing
                       pages natively.
                     </JobTasks>
@@ -368,7 +369,8 @@ class Page extends Component {
                       contentEditable="true"
                       suppressContentEditableWarning={true}
                     >
-                      • Configuring IoT devices and RPis for dummy data.
+                      • Configuring IoT devices and RPis to simulate dummy
+                      sensor data.
                     </JobTasks>
                     <HeightSpacer />
 
@@ -459,7 +461,7 @@ class Page extends Component {
                     >
                       • UPCOMING: Going to connect all my github projects in
                       Playground section of this website, still working on some
-                      GraphQL APIs. I will add email service as well in
+                      API implementations. I will add email service as well in
                       "ContactMe" section using AWS services.
                     </JobTasks>
                     <HeightSpacer />
@@ -496,15 +498,14 @@ class Page extends Component {
                       • <span style={{ color: "red" }}>Bonus:</span> The CV
                       you're currently reading was build using my CV builder
                       tool. You can give it a try and may be you like to edit
-                      your own CV as well. One more thing, it works better on
-                      desktop/laptop, not suitable for mobile devices.
+                      your own CV as well. One more thing, it works best on large screens and Chrome,Mozilla browsers. Some features are not supported on Safari browser.
                     </JobTasks>
                     <JobTasks
                       contentEditable="true"
                       suppressContentEditableWarning={true}
                     >
-                      • You can edit all text in this tool and then click on
-                      print button to get your pdf copy of your cv
+                      • This tool supports online editing and A4 size PDF
+                      exports
                     </JobTasks>
                     <HeightSpacer />
 
@@ -624,13 +625,13 @@ const ContactItem = styled.div`
 const LeftDiv = styled.div`
   display: flex;
   height: 100%;
-  width: 20%;
+  width: 22%;
 `;
 
 const RightDiv = styled.div`
   display: flex;
   height: 100%;
-  width: 80%;
+  width: 78%;
   flex-direction: column;
 `;
 
