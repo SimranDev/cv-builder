@@ -108,13 +108,13 @@ class Page extends Component {
                   contentEditable="true"
                   suppressContentEditableWarning={true}
                 >
-                  Dart
+                  Dart / Flutter
                 </Skill>
                 <Skill
                   contentEditable="true"
                   suppressContentEditableWarning={true}
                 >
-                  Flutter
+                  Node.js
                 </Skill>
                 <Skill
                   contentEditable="true"
@@ -498,7 +498,9 @@ class Page extends Component {
                       • <span style={{ color: "red" }}>Bonus:</span> The CV
                       you're currently reading was build using my CV builder
                       tool. You can give it a try and may be you like to edit
-                      your own CV as well. One more thing, it works best on large screens and Chrome,Mozilla browsers. Some features are not supported on Safari browser.
+                      your own CV as well. One more thing, it works best on
+                      large screens and Chrome,Mozilla browsers. Some features
+                      are not supported on Safari browser.
                     </JobTasks>
                     <JobTasks
                       contentEditable="true"
