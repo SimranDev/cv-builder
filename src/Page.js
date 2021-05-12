@@ -158,6 +158,12 @@ class Page extends Component {
                 >
                   AWS Amplify / S3
                 </Skill>
+                <Skill
+                  contentEditable="true"
+                  suppressContentEditableWarning={true}
+                >
+                  Google Firebase / Firestore
+                </Skill>
                 {this.state.users}
 
                 <Heading
@@ -425,7 +431,7 @@ class Page extends Component {
                     contentEditable="true"
                     suppressContentEditableWarning={true}
                   >
-                    PERSONAL PROJECTS
+                    LIVE PROJECTS
                   </Heading>
                 </HeadSection>
 
@@ -447,7 +453,7 @@ class Page extends Component {
                       suppressContentEditableWarning={true}
                     >
                       Skills: ReactJS, AWS Lambda, SES, Amplify,
-                      styled-components
+                      styled-components, Firebase Firestore
                     </ContentRightDiv>
                     <JobTasks
                       contentEditable="true"
@@ -548,6 +554,22 @@ class Page extends Component {
                       features like in-app-purchase, calculations history,
                       themes and a little bit of 2D animations in "About" page.
                     </JobTasks>
+
+                    <HeightSpacer />
+
+                    <TitleRightDiv
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                    >
+                      Sydney Cricket (under development) -{" "}
+                      <a
+                        href="https://main.dojok8k9gxj4t.amplifyapp.com/"
+                        target="_blank"
+                      >
+                        main.dojok8k9gxj4t.amplifyapp.com/
+                      </a>
+                      <span>May2021-Present</span>
+                    </TitleRightDiv>
                   </Details>
                 </BodySection>
               </RightParent>
@@ -571,7 +593,7 @@ const PageContainer = styled.section`
   margin: 0.5cm auto;
   box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
   width: 210mm;
-  height: 280mm;
+  height: 284mm;
   padding: 16px;
 
   @media print {
