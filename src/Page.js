@@ -4,6 +4,7 @@ import { MdLocalPhone, MdWeb, MdWork } from "react-icons/md";
 import { AiOutlineMail, AiFillLinkedin } from "react-icons/ai";
 import { FaGraduationCap } from "react-icons/fa";
 import { AiFillStar } from "react-icons/ai";
+import TitleMsg from "./TitleMessage";
 
 class Page extends Component {
   state = {
@@ -45,6 +46,7 @@ class Page extends Component {
   render() {
     return (
       <>
+        <TitleMsg />
         <PageContainer>
           <Name contentEditable="true" suppressContentEditableWarning={true}>
             Simran Singh
@@ -698,7 +700,7 @@ const AddSkillBtn = styled.button`
   color: white;
   border-width: 0;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
-  background-color: #2ecc71;
+  background-color: var(--accent-color);
 
   :active {
     bottom: 79px;
@@ -714,7 +716,7 @@ const AddAchievementBtn = styled.button`
   color: white;
   border-width: 0;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
-  background-color: #2ecc71;
+  background-color: var(--accent-color);
 
   :active {
     bottom: 29px;
