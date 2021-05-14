@@ -15,6 +15,7 @@ const TitleMsg = () => {
               strings: ["edit", "save", "export", "customize"],
               autoStart: true,
               loop: true,
+              deleteSpeed: 100,
             }}
           />
         </h4>
