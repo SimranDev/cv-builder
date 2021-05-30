@@ -33,9 +33,6 @@ const ParentContainer = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  /* position: fixed; */
-  /* top: 0; */
-  /* border: 1px dashed red; */
 
   p {
     margin-top: 10px;

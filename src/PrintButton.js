@@ -3,6 +3,7 @@ import React, { useRef } from "react";
 import { useReactToPrint } from "react-to-print";
 import Page from "./Page";
 import { VscFilePdf } from "react-icons/vsc";
+import TitleMsg from "./TitleMessage";
 
 const PrintButton = () => {
   const componentRef = useRef();
@@ -13,6 +14,7 @@ const PrintButton = () => {
 
   return (
     <div>
+      <TitleMsg />
       <Page ref={componentRef} />
       <PrintBtn onClick={handlePrint}>
         <VscFilePdf />

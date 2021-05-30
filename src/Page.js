@@ -4,7 +4,6 @@ import { MdLocalPhone, MdWeb, MdWork } from "react-icons/md";
 import { AiOutlineMail, AiFillLinkedin } from "react-icons/ai";
 import { FaGraduationCap } from "react-icons/fa";
 import { AiFillStar } from "react-icons/ai";
-import TitleMsg from "./TitleMessage";
 
 class Page extends Component {
   state = {
@@ -46,7 +45,6 @@ class Page extends Component {
   render() {
     return (
       <>
-        <TitleMsg />
         <PageContainer>
           <Name contentEditable="true" suppressContentEditableWarning={true}>
             Simran Singh
@@ -188,6 +186,7 @@ class Page extends Component {
                   <a
                     href="https://www.youracclaim.com/badges/81e0d8a6-fd09-4b58-a834-dba5c894efaf/linked_in_profile"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     Achieved Badge
                   </a>
@@ -206,7 +205,9 @@ class Page extends Component {
                   <a
                     href="https://www.credential.net/727b4418-d3fe-4d42-9a36-e13ed5d1ee16#gs.bxf14j"
                     target="_blank"
+                    rel="noreferrer"
                   >
+                    {" "}
                     Certificate
                   </a>
                 </AchievementDescription>
@@ -220,7 +221,11 @@ class Page extends Component {
                   contentEditable="true"
                   suppressContentEditableWarning={true}
                 >
-                  <a href="https://www.codesim.dev/itPro" target="_blank">
+                  <a
+                    href="https://www.codesim.dev/itPro"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     Certificate
                   </a>
                 </AchievementDescription>
@@ -234,11 +239,14 @@ class Page extends Component {
                   contentEditable="true"
                   suppressContentEditableWarning={true}
                 >
-                  service recognition{" "}
-                  <a href="https://www.codesim.dev/matrix" target="_blank">
+                  service recognition during level 3 and level 4 NZ Emergency{" "}
+                  <a
+                    href="https://www.codesim.dev/matrix"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     Certificate
-                  </a>{" "}
-                  during level 3 and level 4 NZ Emergency
+                  </a>
                 </AchievementDescription>
                 {this.state.achievements}
               </SkillsContainer>
@@ -322,7 +330,7 @@ class Page extends Component {
                     >
                       • Developing React website for the fitness studio.
                       Currently live on{" "}
-                      <a href="https://www.fatehfitness.in/">
+                      <a href="https://www.fatehfitness.in/" rel="noreferrer">
                         www.fatehfitness.in
                       </a>
                     </JobTasks>
@@ -445,7 +453,11 @@ class Page extends Component {
                       suppressContentEditableWarning={true}
                     >
                       Personal Website (under development) -{" "}
-                      <a href="https:\\www.codesim.dev" target="_blank">
+                      <a
+                        href="https:\\www.codesim.dev"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         www.codesim.dev
                       </a>
                       <span>March 2021 - Present</span>
@@ -482,6 +494,7 @@ class Page extends Component {
                       <a
                         href="https://main.d29sbkrjzugov7.amplifyapp.com/"
                         target="_blank"
+                        rel="noreferrer"
                       >
                         main.d29sbkrjzugov7.amplifyapp.com{" "}
                       </a>
@@ -527,6 +540,7 @@ class Page extends Component {
                       <a
                         href="https://play.google.com/store/apps/details?id=com.singh.calculator"
                         target="_blank"
+                        rel="noreferrer"
                       >
                         play.google.com/store/apps/details?id=com.singh.calculator
                       </a>
@@ -567,6 +581,7 @@ class Page extends Component {
                       <a
                         href="https://main.dojok8k9gxj4t.amplifyapp.com/"
                         target="_blank"
+                        rel="noreferrer"
                       >
                         main.dojok8k9gxj4t.amplifyapp.com/
                       </a>
@@ -578,6 +593,7 @@ class Page extends Component {
             </RightDiv>
           </BodyContainer>
         </PageContainer>
+
         <AddSkillBtn onClick={this.addUser}>ADD SKILL</AddSkillBtn>
         <AddAchievementBtn onClick={this.addAchievement}>
           ADD ACHIEVEMENT
