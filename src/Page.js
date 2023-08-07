@@ -53,7 +53,7 @@ class Page extends Component {
             <ContactItem>
               <MdLocalPhone />
               <h5 contentEditable="true" suppressContentEditableWarning={true}>
-                0226497917
+                022XXXXXXXX
               </h5>
             </ContactItem>
             <ContactItem>
@@ -90,19 +90,19 @@ class Page extends Component {
                   contentEditable="true"
                   suppressContentEditableWarning={true}
                 >
-                  JavaScript
+                  HTML/CSS
                 </Skill>
                 <Skill
                   contentEditable="true"
                   suppressContentEditableWarning={true}
                 >
-                  React / Redux
+                  JavaScript / TypeScript
                 </Skill>
                 <Skill
                   contentEditable="true"
                   suppressContentEditableWarning={true}
                 >
-                  SASS / styled-components
+                  NodeJS
                 </Skill>
                 <Skill
                   contentEditable="true"
@@ -114,55 +114,73 @@ class Page extends Component {
                   contentEditable="true"
                   suppressContentEditableWarning={true}
                 >
-                  Node.js
+                  Turborepo / Monorepo
                 </Skill>
                 <Skill
                   contentEditable="true"
                   suppressContentEditableWarning={true}
                 >
-                  AngularJS / Angular Material
+                  React / NextJS
                 </Skill>
                 <Skill
                   contentEditable="true"
                   suppressContentEditableWarning={true}
                 >
-                  Git Version Control
+                  Angular / Svelte
                 </Skill>
                 <Skill
                   contentEditable="true"
                   suppressContentEditableWarning={true}
                 >
-                  HTML5 / CSS3
+                  Redux / Zustand
                 </Skill>
                 <Skill
                   contentEditable="true"
                   suppressContentEditableWarning={true}
                 >
-                  REST / GraphQL
+                  Strapi / Contentful
                 </Skill>
                 <Skill
                   contentEditable="true"
                   suppressContentEditableWarning={true}
                 >
-                  AdobeXD / SketchApp
+                  Storybook
                 </Skill>
                 <Skill
                   contentEditable="true"
                   suppressContentEditableWarning={true}
                 >
-                  AWS Lambda / API Gateway
+                  Jest / Vitest / Cypress
                 </Skill>
                 <Skill
                   contentEditable="true"
                   suppressContentEditableWarning={true}
                 >
-                  AWS Amplify / S3
+                  Auth0
                 </Skill>
                 <Skill
                   contentEditable="true"
                   suppressContentEditableWarning={true}
                 >
-                  Google Firebase / Firestore
+                  Stripe
+                </Skill>
+                <Skill
+                  contentEditable="true"
+                  suppressContentEditableWarning={true}
+                >
+                  SEO / GA4 / Tag Manager
+                </Skill>
+                <Skill
+                  contentEditable="true"
+                  suppressContentEditableWarning={true}
+                >
+                  Git / Azure DevOps / GitHub
+                </Skill>
+                <Skill
+                  contentEditable="true"
+                  suppressContentEditableWarning={true}
+                >
+                  Tailwind / Bootstrap
                 </Skill>
                 {this.state.users}
 
@@ -270,7 +288,7 @@ class Page extends Component {
                       suppressContentEditableWarning={true}
                     >
                       Specialization in Software Development - Level 7
-                      <span>2015-2016</span>
+                      <span>2016-2017</span>
                     </TitleRightDiv>
                     <ContentRightDiv
                       contentEditable="true"
@@ -308,45 +326,92 @@ class Page extends Component {
                 </HeadSection>
 
                 <BodySection>
-                  <Divider></Divider>
+                  <Divider />
                   <Details>
                     <TitleRightDiv
                       contentEditable="true"
                       suppressContentEditableWarning={true}
                     >
-                      Web Developer - Fateh Fitness Studio, India
-                      <span>October 2020 - Present</span>
+                      Web Developer - Tella Ltd, NZ
+                      <span>August 2021 - Present</span>
                     </TitleRightDiv>
                     <ContentRightDiv
                       contentEditable="true"
                       suppressContentEditableWarning={true}
                     >
-                      Skills: ReactJS, Javascript, NodeJS, AWS Lambda, SES,
-                      Amplify, styled-components, AdobeXD, Flutter, Dart
+                      Skills:Turborepo,React, NextJS, TypeScript, Strapi, Azure
+                      DevOps, Vercel, Git, GA4, TagManager
                     </ContentRightDiv>
                     <JobTasks
                       contentEditable="true"
                       suppressContentEditableWarning={true}
                     >
-                      • Developing React website for the fitness studio.
-                      Currently live on{" "}
-                      <a href="https://www.fatehfitness.in/" rel="noreferrer">
-                        www.fatehfitness.in
-                      </a>
+                      • Developing prototypes, POCs, and plan future
+                      development.
                     </JobTasks>
                     <JobTasks
                       contentEditable="true"
                       suppressContentEditableWarning={true}
                     >
-                      • Managing AWS Services for deployment, lambda functions,
-                      API Gateway and email services,
+                      • Establishing a complex state management system using
+                      Redux and Zustand.
                     </JobTasks>
                     <JobTasks
                       contentEditable="true"
                       suppressContentEditableWarning={true}
                     >
-                      • Creating Flutter/Dart widgets for mobile-development
-                      team
+                      • Writing unit tests using Vitest and Jest
+                    </JobTasks>
+                    <JobTasks
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                    >
+                      • Regularly manage pull requests and code reviews, while
+                      continuously striving to adopt and promote best practices
+                      across the team.
+                    </JobTasks>
+
+                    <HeightSpacer />
+                    <TitleRightDiv
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                    >
+                      Full Stack Developer - Fateh Fitness Studios
+                      <span>Oct 2020 - July 2021</span>
+                    </TitleRightDiv>
+                    <ContentRightDiv
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                    >
+                      Skills:React, NodeJS, Express, AWS Amplify, SES,
+                      CodePipeline, Lambda, Git, GitHub Actions, AdobeXD
+                    </ContentRightDiv>
+                    <JobTasks
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                    >
+                      • Developed React based business website.
+                    </JobTasks>
+                    <JobTasks
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                    >
+                      • Analysed business requirements and proposed appropriate
+                      design solutions.
+                    </JobTasks>
+                    <JobTasks
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                    >
+                      • Integrate AWS SES for emails, AWS Amplify and AWS
+                      CodePipeline to streamline releases and deployment.
+                    </JobTasks>
+                    <JobTasks
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                    >
+                      • Consume Facebook APIs to connect social media page with
+                      the website.
                     </JobTasks>
 
                     <HeightSpacer />
@@ -357,75 +422,35 @@ class Page extends Component {
                     >
                       Mobile Developer & Designer -If Else Cloud Ltd, Auckland,
                       NZ
-                      <span>March2019-June2019</span>
+                      <span>July 2019 - Feb 2020</span>
                     </TitleRightDiv>
                     <ContentRightDiv
                       contentEditable="true"
                       suppressContentEditableWarning={true}
                     >
-                      Skills: SketchApp, AdobeXD, Flutter, Dart, Documentation,
-                      RPi
+                      Skills: Flutter, Dart, SketchApp, Git, GitHub, IoT,
+                      RasberryPi, Android, IOS, WatchOS
                     </ContentRightDiv>
                     <JobTasks
                       contentEditable="true"
                       suppressContentEditableWarning={true}
                     >
-                      • Designing cross-platform wireframes and prototypes using
-                      AdobeXD and SketchApp.
+                      • Building a cross-platform Flutter app working on
+                      Android, IOS and WearOS.
                     </JobTasks>
                     <JobTasks
                       contentEditable="true"
                       suppressContentEditableWarning={true}
                     >
-                      • Developing Flutter/Dart widgets for Android, IOS,
-                      WatchOS for the UX testing purposes before developing
-                      pages natively.
+                      • Design UI and prototypes using Sketch App.
                     </JobTasks>
                     <JobTasks
                       contentEditable="true"
                       suppressContentEditableWarning={true}
                     >
-                      • Configuring IoT devices and RPis to simulate dummy
-                      sensor data.
+                      • Setup state management system using BLoC pattern.
                     </JobTasks>
                     <HeightSpacer />
-
-                    <TitleRightDiv
-                      contentEditable="true"
-                      suppressContentEditableWarning={true}
-                    >
-                      Frontend Web Dev (Project for NKAI, Ministry of Education,
-                      NZ) - Firstec Ltd
-                      <span>Sep2017-Mar2018</span>
-                    </TitleRightDiv>
-                    <ContentRightDiv
-                      contentEditable="true"
-                      suppressContentEditableWarning={true}
-                    >
-                      Skills: AngularJS, AdobeXD, HTML5, CSS3, Javascript,
-                      Angular Material, Product Presentation
-                    </ContentRightDiv>
-                    <JobTasks
-                      contentEditable="true"
-                      suppressContentEditableWarning={true}
-                    >
-                      • Developing Angular components for the student management
-                      system of NKAI
-                    </JobTasks>
-                    <JobTasks
-                      contentEditable="true"
-                      suppressContentEditableWarning={true}
-                    >
-                      • Designing proptotypes and wireframes for development
-                      team
-                    </JobTasks>
-                    <JobTasks
-                      contentEditable="true"
-                      suppressContentEditableWarning={true}
-                    >
-                      • Preparing upcoming prototypes for presentation purposes
-                      and requirement gathering
-                    </JobTasks>
                   </Details>
                 </BodySection>
               </RightParent>
@@ -452,37 +477,21 @@ class Page extends Component {
                       contentEditable="true"
                       suppressContentEditableWarning={true}
                     >
-                      Personal Website (under development) -{" "}
+                      Quick Painters (under development) -{" "}
                       <a
-                        href="https:\\www.codesim.dev"
+                        href="https://www.quickpainters.co.nz/"
                         target="_blank"
                         rel="noreferrer"
                       >
-                        www.codesim.dev
+                        quickpainters.co.nz
                       </a>
-                      <span>March 2021 - Present</span>
                     </TitleRightDiv>
-                    <ContentRightDiv
-                      contentEditable="true"
-                      suppressContentEditableWarning={true}
-                    >
-                      Skills: ReactJS, AWS Lambda, SES, Amplify,
-                      styled-components, Firebase Firestore
-                    </ContentRightDiv>
                     <JobTasks
                       contentEditable="true"
                       suppressContentEditableWarning={true}
                     >
-                      • Developing portfolio website using ReactJS
-                    </JobTasks>
-                    <JobTasks
-                      contentEditable="true"
-                      suppressContentEditableWarning={true}
-                    >
-                      • UPCOMING: Going to connect all my github projects in
-                      Playground section of this website, still working on some
-                      API implementations. I will add email service as well in
-                      "ContactMe" section using AWS services.
+                      Building a business website for a friend using NextJS,
+                      EmailJS, Tailwind and Vercel.
                     </JobTasks>
                     <HeightSpacer />
 
@@ -490,46 +499,25 @@ class Page extends Component {
                       contentEditable="true"
                       suppressContentEditableWarning={true}
                     >
-                      CV Builder Tool -{" "}
+                      AI Background Remover -{" "}
                       <a
-                        href="https://main.d29sbkrjzugov7.amplifyapp.com/"
+                        href="https://clearbg.codesim.dev/"
                         target="_blank"
                         rel="noreferrer"
                       >
-                        main.d29sbkrjzugov7.amplifyapp.com{" "}
+                        clearbg.codesim.dev
                       </a>
-                      <span>2020</span>
                     </TitleRightDiv>
-                    <ContentRightDiv
-                      contentEditable="true"
-                      suppressContentEditableWarning={true}
-                    >
-                      Skills: ReactJS, HTML5, CSS3
-                    </ContentRightDiv>
                     <JobTasks
                       contentEditable="true"
                       suppressContentEditableWarning={true}
                     >
-                      • This is my personal online CV Builder/Editor
+                      Developed a tool using Svelte and Cloudinary APIs that
+                      leverages AI for image background removal. This project
+                      allowed me to explore Svelte's capabilities and learn more
+                      about integrating AI-based features into web applications.
                     </JobTasks>
-                    <JobTasks
-                      contentEditable="true"
-                      suppressContentEditableWarning={true}
-                    >
-                      • <span style={{ color: "red" }}>Bonus:</span> The CV
-                      you're currently reading was build using my CV builder
-                      tool. You can give it a try and may be you like to edit
-                      your own CV as well. One more thing, it works best on
-                      large screens and Chrome,Mozilla browsers. Some features
-                      are not supported on Safari browser.
-                    </JobTasks>
-                    <JobTasks
-                      contentEditable="true"
-                      suppressContentEditableWarning={true}
-                    >
-                      • This tool supports online editing and A4 size PDF
-                      exports
-                    </JobTasks>
+
                     <HeightSpacer />
 
                     <TitleRightDiv
@@ -546,29 +534,14 @@ class Page extends Component {
                       </a>
                       <span>2020</span>
                     </TitleRightDiv>
-                    <ContentRightDiv
-                      contentEditable="true"
-                      suppressContentEditableWarning={true}
-                    >
-                      Skills: Flutter, Dart, Google AdMob, Google
-                      In-App-Purchase, Rive 2D, Shared Preferences
-                    </ContentRightDiv>
                     <JobTasks
                       contentEditable="true"
                       suppressContentEditableWarning={true}
                     >
-                      • This is flutter based cross-platform application. I
-                      built it to test, learn and demonstrate some google's core
-                      APIs like in-app-purchases, shared-preferences, AdMob,
-                      etc.
-                    </JobTasks>
-                    <JobTasks
-                      contentEditable="true"
-                      suppressContentEditableWarning={true}
-                    >
-                      • Implementd very beautiful minimal FlatUI themes. It has
-                      features like in-app-purchase, calculations history,
-                      themes and a little bit of 2D animations in "About" page.
+                      Built a Flutter app in 2020 that includes features such as
+                      theming, calculation history, Ad Mob, Google
+                      In-App-Purchase, and an About page with Rive 2D
+                      transitions
                     </JobTasks>
 
                     <HeightSpacer />
@@ -579,14 +552,22 @@ class Page extends Component {
                     >
                       Sydney Cricket (under development) -{" "}
                       <a
-                        href="https://main.dojok8k9gxj4t.amplifyapp.com/"
+                        href="https://codesim.dev"
                         target="_blank"
                         rel="noreferrer"
                       >
-                        main.dojok8k9gxj4t.amplifyapp.com/
+                        codesim.dev
                       </a>
-                      <span>May2021-Present</span>
                     </TitleRightDiv>
+                    <JobTasks
+                      contentEditable="true"
+                      suppressContentEditableWarning={true}
+                    >
+                      Currently developing a personal portfolio using NextJS and
+                      Tailwind. This project provides me with the opportunity to
+                      showcase my skills and work in a personal and creative
+                      way.
+                    </JobTasks>
                   </Details>
                 </BodySection>
               </RightParent>
